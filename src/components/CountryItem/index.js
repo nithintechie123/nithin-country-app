@@ -1,4 +1,9 @@
-import {EachCountryItem, EachCountryName, Button} from '../../styledComponents'
+import {
+  EachCountryItem,
+  EachCountryName,
+  Button,
+  VisitText,
+} from '../../styledComponents'
 
 const CountryItem = props => {
   const {eachCountryDetails, clickedVisitButton} = props
@@ -18,7 +23,7 @@ const CountryItem = props => {
         onClick={onClickVisitButton}
         visitStatus={isVisited}
       >
-        {visitText}
+        <VisitText>{visitText}</VisitText>
       </Button>
     </EachCountryItem>
   )

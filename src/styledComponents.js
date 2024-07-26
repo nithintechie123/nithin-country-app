@@ -41,7 +41,6 @@ export const EachCountryItem = styled.li`
 export const EachCountryName = styled.p`
   color: #ffffff;
   font-family: 'Roboto';
-  font-family: 'Roboto';
   font-weight: 400;
   font-size: 15px;
 `
@@ -56,7 +55,15 @@ export const Button = styled.button`
   width: 90px;
   color: ${props => (props.visitStatus ? '#94a3b8' : '#ffffff')};
   cursor: pointer;
+  outline: none;
 `
+
+export const VisitText = styled.p`
+  color: #f1f5f9;
+  font-family: 'Roboto';
+  margin: 0px;
+`
+
 export const VisitedCountriesHeading = styled.h1`
   font-family: 'Roboto';
   font-size: 20px;
@@ -98,8 +105,6 @@ export const VisitedCountryName = styled.p`
 export const RemoveButton = styled.button`
   border: 1px solid #94a3b8;
   background-color: transparent;
-  color: #f1f5f9;
-  font-family: 'Roboto';
   border-radius: 2px;
   width: 70px;
   padding: 5px;
@@ -107,15 +112,19 @@ export const RemoveButton = styled.button`
   outline: none;
 `
 
+export const RemoveText = styled.p`
+  color: #ffffff;
+  margin: 0px;
+`
+
 export const NoCountryViewContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   height: 100vh;
 `
 
-export const NoCountryText = styled.h1`
+export const NoCountryText = styled.p`
   color: #ffffff;
   font-weight: 400;
   font-family: 'Roboto';

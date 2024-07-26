@@ -4,6 +4,7 @@ import {
   VisitedCountryNameRemoveButtonContainer,
   VisitedCountryName,
   RemoveButton,
+  RemoveText,
 } from '../../styledComponents'
 
 const VisitedCountry = props => {
@@ -20,7 +21,7 @@ const VisitedCountry = props => {
       <VisitedCountryNameRemoveButtonContainer>
         <VisitedCountryName>{name}</VisitedCountryName>
         <RemoveButton type="button" onClick={onClickRemoveBtn}>
-          Remove
+          <RemoveText>Remove</RemoveText>
         </RemoveButton>
       </VisitedCountryNameRemoveButtonContainer>
     </VisitedCountryItem>
