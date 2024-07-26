@@ -61,7 +61,7 @@ export const Button = styled.button`
 export const VisitText = styled.p`
   color: #f1f5f9;
   font-family: 'Roboto';
-  margin: 0px;
+  margin-right: 20px;
 `
 
 export const VisitedCountriesHeading = styled.h1`

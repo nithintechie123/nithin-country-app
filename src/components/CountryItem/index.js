@@ -9,8 +9,6 @@ const CountryItem = props => {
   const {eachCountryDetails, clickedVisitButton} = props
   const {id, name, isVisited} = eachCountryDetails
 
-  const visitText = isVisited ? 'Visited' : 'Visit'
-
   const onClickVisitButton = () => {
     clickedVisitButton(id)
   }
@@ -18,13 +16,17 @@ const CountryItem = props => {
   return (
     <EachCountryItem>
       <EachCountryName>{name}</EachCountryName>
-      <Button
-        type="button"
-        onClick={onClickVisitButton}
-        visitStatus={isVisited}
-      >
-        <VisitText>{visitText}</VisitText>
-      </Button>
+      {isVisited ? (
+        <VisitText onClick={onClickVisitButton}>Visited</VisitText>
+      ) : (
+        <Button
+          type="button"
+          onClick={onClickVisitButton}
+          visitStatus={isVisited}
+        >
+          Visit
+        </Button>
+      )}
     </EachCountryItem>
   )
 }
